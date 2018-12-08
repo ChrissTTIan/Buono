@@ -10,17 +10,7 @@ body {
 	grid-template-columns: min-content 1fr;
 	font-family: system-ui, sans-serif;
 	margin-left: 0px;
-	/* this breaks position sticky in Firefox */
-	/* overflow-x: hidden; */
 }
-/* header {
-  grid-column: 1 / 3;
-  background: #455A64;
-  color: white;
-  padding: 4rem;
-  text-align: center;
-} */
-
 nav.lat {
 	height: 100%;
 	white-space: nowrap;
@@ -85,9 +75,8 @@ nav.lat {
 	background: black;
 }
 main {
-	padding-bottom: 40rem;
+	padding-bottom: 50px;
 }
-/* Per chrome  */
 .pagina {
 	margin-left: 15px;
 	height: 100%;
@@ -97,22 +86,34 @@ main {
 	width: 70vw;
 	margin-top: 22px;
 }
-/* Fine chrome */
-/* Per firefox */
-@-moz-document url-prefix() {
-
-div.pagina {
-	margin-left: 15px;
-	height: 100vw;
-	width: 70vw;
+p.punto1{
+	position: absolute;
+	top: 20vw;
 }
-.misurepagina {
-	height: 100%;
-	width: 100%;
-	margin-top: 22px;
+p.punto2{
+	position: absolute;
+	top: 118vw;
 }
+p.punto3{
+position: absolute;
+top: 125vw;
 }
-/* Fine firefox */
+p.punto4{
+position: absolute;
+top: 223vw;
+}
+p.punto5{
+position: absolute;
+top: 385vw;
+}
+p.punto6{
+position: absolute;
+top:840vw;
+}
+p.punto7{
+position: absolute;
+top: 845vw;
+}
 img {
 	border: 1px solid #000000;
 }
@@ -141,6 +142,8 @@ img {
 .btnmostra {
 	display: none;
 }
+
+
 @media only screen and (max-width: 765px) {
 	.oggettitopbar, .topbar {
 		flex-direction: column;
@@ -160,4 +163,58 @@ img {
 		position: absolute;
 		cursor: pointer;
 	}
+}
+marquee{
+	margin-top: 10px;
+	color: red;
+}
+li.lat:first-child{
+	text-align: center;
+}
+                                                     /* Solo per firefox */
+
+
+
+
+
+@-moz-document url-prefix() {
+
+div.pagina {
+	margin-left: 15px;
+	height: 100vw;
+	width: 70vw;
+}
+.misurepagina {
+	height: 100%;
+	width: 100%;
+	margin-top: 22px;
+}
+p.punto1{
+	position: absolute;
+	top: 17vw;
+}
+p.punto2{
+	position: absolute;
+	top: 117vw;
+}
+p.punto3{
+position: absolute;
+top: 122vw;
+}
+p.punto4{
+position: absolute;
+top: 222vw;
+}
+p.punto5{
+position: absolute;
+top: 385vw;
+}
+p.punto6{
+position: absolute;
+top:835vw;
+}
+p.punto7{
+position: absolute;
+top: 840vw;
+}
 }
